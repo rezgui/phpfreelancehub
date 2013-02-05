@@ -10,7 +10,7 @@
 		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet" media="screen">
 		
 		<!--JavaScript-->
-		<script src="<?php echo base_url(); ?>js/jquery.v1.9.0"></script>
+		<script src="<?php echo base_url(); ?>js/jquery.js"></script>
 		<script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
 		
 		<script type="text/javascript">
@@ -23,7 +23,7 @@
     <div class="head">
         <div class="headTop">
 			<?php echo  img(array('src'=>'img/logo.png','class'=>'logo')); ?>
-            <span class="loggedName"> vijay kumar</span>
+            <span class="loggedName"> <?php echo $this->User->logged_user()->full_name; ?></span>
          </div>
 
         <!-- Left side bar-->
@@ -45,7 +45,7 @@
 			</td>
 		<?php }	?>     
         <td align="center" class="nav_item nav_item_logout">
-				<a href="<?php echo site_url("logout");?>">
+				<a href="<?php echo site_url("users/logout");?>">
                 	<?php echo  img(array('src'=>'img/logout.png','class'=>'nav_item_image')); ?> <br />
                     <?php echo lang("module_logout") ?>
                 </a>
@@ -61,10 +61,12 @@
 	<center>
     	<div class="loggedUser"> vijaythecoder </div>
         <?php echo  img(array('src'=>'img/avatar.png','class'=>'avatar')); ?> 
+    </center>
     
-     </center>
+    <div id="chatlist">
+    vijay
+    </div>
     
     </div>
     
  <div class="content">
-

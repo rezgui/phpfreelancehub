@@ -8,6 +8,12 @@ class Global_data extends CI_Controller
 		parent::__construct();
 		$this->module_id = $module_id;	
 		
+		$this->load->model('User');
+		if(!$this->User->is_logged_in())
+		{
+			redirect('login');
+		}
+		
 		$data['all_modules']=$this->Module->get_all_modules();
 		$this->load->vars($data);
 	}

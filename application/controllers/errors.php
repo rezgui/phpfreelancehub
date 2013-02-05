@@ -24,3 +24,5 @@ class Errors extends CI_Controller {
 /* End of file errors.php
  * Location: ./application/controllers/errors.php
  */
+ 
+ ?>
