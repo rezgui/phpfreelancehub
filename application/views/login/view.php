@@ -44,13 +44,18 @@
        
 	   <?php 
 			if (validation_errors()) 
-				{ 
-					echo validation_errors(); 
-				}
+				{ ?>
+				<div class="alert alert-error">
+                <a class="close" data-dismiss="alert" href="#">x</a>Incorrect Username or Password!
+            </div>  
+			<?php	}
 		?>
+		
+		
 		
         <div id="login_box">
 			<?php echo form_open('login',array('class'=>'form-horizontal')); ?>
+			 
 			  <div class="control-group">
 				<label class="control-label" for="inputEmail">Email Id</label>
 				<div class="controls">

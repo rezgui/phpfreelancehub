@@ -38,16 +38,14 @@ class User extends CI_Model
 		}
 		else
 		{
-			//create object with empty properties.
 			$fields = $this->db->list_fields('people');
-			$person_obj = new stdClass;
+			$user_obj = new stdClass;
 			
 			foreach ($fields as $field)
 			{
-				$person_obj->$field='';
+				$user_obj->$field='';
 			}
-			
-			return $person_obj;
+			return $user_obj;
 		}
 	}
 	

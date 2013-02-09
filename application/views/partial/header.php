@@ -3,15 +3,18 @@
 	
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>PHP Freelance Hub</title>
+		<title>PHP Freelance Hub -<?php echo $controller_name; ?></title>
         
 		<!--CSS -->
-   		<link href="<?php echo base_url(); ?>css/general.css" rel="stylesheet" media="screen">
-		<link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet" media="screen">
+   		<link href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url(); ?>css/general.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url(); ?>css/font-awesome.min.css" rel="stylesheet" media="screen">
 		
 		<!--JavaScript-->
 		<script src="<?php echo base_url(); ?>js/jquery.js"></script>
 		<script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url(); ?>js/custom.js"></script>
+		<script src="<?php echo base_url(); ?>js/jquery.validate.min.js"></script>
 		
 		<script type="text/javascript">
 			var SITE_URL= "<?php echo site_url(); ?>";
@@ -70,3 +73,9 @@
     </div>
     
  <div class="content">
+	<h3><?php echo $controller_name; ?></h3>
+	
+	<div class="alert alert-success" id="feedback_bar" data-dismiss="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  Best check yo self, you're not...
+</div>

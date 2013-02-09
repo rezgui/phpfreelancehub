@@ -21,7 +21,7 @@ class Login extends CI_Controller
 			
 		if(!$this->User->login($email,$password))
 		{
-			$this->form_validation->set_message('login_check', lang('login_invalid_username_and_password'));
+		$this->form_validation->set_message('rule', 'Error Message');
 			$this->load->view("login/view");
 		}
 		else 

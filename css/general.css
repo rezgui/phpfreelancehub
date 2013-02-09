@@ -141,60 +141,20 @@ body
 		padding-left:247px;
 	}
 	
-.woocommerce_message,
-.woocommerce_info,
-.woocommerce_error,
-.woocommerce-message,
-.woocommerce-info,
-.woocommerce-error {
-  padding: .618em 1em .618em 3.631em;
-  margin-bottom: 1.618em;
-  background: #fff;
-  border: 1px solid #6ea0b6;
-  border-left-width: .382em ;
-  position: relative;
-  min-height: 2.618em;
-}
-.woocommerce_message:before,
-.woocommerce_info:before,
-.woocommerce_error:before,
-.woocommerce-message:before,
-.woocommerce-info:before,
-.woocommerce-error:before {
-  font-family: 'WebSymbolsRegular';
-  content: "D";
-  display: block;
-  color: #6ea0b6;
-  position: absolute;
-  top: .618em;
-  font-size: 1.387em;
-  left: .857em;
-}
-.woocommerce_error,
-.woocommerce-error {
-  border-color: #c67c77;
-  list-style: none;
-}
-.woocommerce_error:before,
-.woocommerce-error:before {
-  content: "W";
-  color: #c67c77;
-}
-.woocommerce_message,
-.woocommerce-message {
-  border-color: #a0bd72;
-}
-.woocommerce_message:before,
-.woocommerce-message:before {
-  content: ".";
-  color: #a0bd72;
-}
-.woocommerce_message .button,
-.woocommerce-message .button {
-  float: right;
-}
+#pagination
+	{
+			float:right;
+			padding:5px 20px;
+	}
 
-
+.required
+	{
+	color: #b94a48;
+	}
+#error_message_box li
+	{
+		display:inline;
+	}
 @media (max-width: 1025px) 
 { 
 	.nav
@@ -213,6 +173,6 @@ body
 		padding-left:0px;
 		
 	}
-	
+
 }
 
